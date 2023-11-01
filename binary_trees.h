@@ -40,4 +40,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 /*inserts a node as the left-child of another node*/
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
+/*inserts a node as the right-child*/
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+
 #endif /* _BINARY_TREES_H_ */
