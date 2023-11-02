@@ -58,4 +58,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 /*a binary tree using in-order traversal*/
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
+/*a binary tree using post-order traversal*/
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
 #endif /* _BINARY_TREES_H_ */
