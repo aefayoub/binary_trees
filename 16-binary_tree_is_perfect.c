@@ -38,11 +38,12 @@ int tree_is_parent(const binary_tree_t *node)
  */
 int count_height(const binary_tree_t *tree)
 {
-	size_t left_h, right_h;
+	int left_h = 0;
+	int right_h = 0;
 
 	if (tree == NULL)
 	{
-		return (0);
+		return (-1);
 	}
 
 	right_h = count_height(tree->right);
