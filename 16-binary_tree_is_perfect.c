@@ -55,6 +55,12 @@ int count_height(const binary_tree_t *tree)
 
 }
 
+/**
+ * binary_tree_is_perfect - checks if a binary tree is perfect
+ *
+ * @tree: tree root
+ * Return: 1 if tree is perfect, 0 otherwise
+ */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	if (tree && count_height(tree->left) == count_height(tree->right))
