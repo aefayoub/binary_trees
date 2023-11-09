@@ -28,6 +28,8 @@ size_t count_height(const binary_tree_t *tree)
 /**
  * binary_tree_level - Measure the height of a binary tree
  * @tree: A pointer to the root node of the tree to measure
+ * @level: level int
+ * @func: pointer to a function
  * Return: The height of the tree below the root, or 0 if the tree is NULL
  */
 void binary_tree_level(const binary_tree_t *tree, int level, void (*func)(int))
@@ -44,6 +46,13 @@ void binary_tree_level(const binary_tree_t *tree, int level, void (*func)(int))
 	}
 }
 
+/**
+ * binary_tree_levelorder - prints data in level-order traversal
+ *
+ * @tree: tree root
+ * @func: pointer to a function
+ * Return: no return
+ */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	size_t height;
@@ -54,6 +63,6 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 
 	height = count_height(tree);
 
-	for ( i = 1; i <= height; i++)
+	for (i = 1; i <= height; i++)
 		binary_tree_level(tree, i, func);
 }
